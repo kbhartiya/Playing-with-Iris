@@ -1,7 +1,7 @@
 #Import neccessary libraries
 import numpy as np
 import pandas as pd
-
+import matplotlib.pyplot as plt
 #Run python3 iris_knn.py n, "where n is the fraction of test data split"
 import argparse
 parser = argparse.ArgumentParser()
@@ -102,8 +102,15 @@ def main():
 			iris_pred.append(pred)
 		iris_target_pred = np.array(iris_pred)
 		knn_iris_acc.append(get_accuracy(iris_target_pred, y_train))
-		#most_suitable_k = np.argmax(knn)
-	return print(knn_iris_acc)		
-
+		most_suitable_k = np.argmax(np.array(knn_iris_acc)) + 2
+		print("Most suitable value of k : ",most_suitable_k)
+	
+		
+	plt.plot(range(2,len(y_train)), knn_iris_acc)
+	plt.xlabel('Number of neighbours')
+	plt.ylabel('Accuracy')
+	plt.grid()
+	plt.show()		
+	return most_suitable_k
 if __name__ == "__main__":
 	main()	
