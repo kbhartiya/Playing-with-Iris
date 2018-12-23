@@ -2,6 +2,7 @@
 A simple K- Nearest Neighbour and K-means Clusteing  implementation of classifying iris flowers from scratch.
 ![alt Description](https://github.com/kbhartiya/Playing-with-Iris/blob/master/iris_petal_sepal.png) The dataset has the information of sepal width, sepal_height, petal width and petal height in cm for the three classes of Iris flowers Setosa, Virginica, Versicolor.
 
+
 ## For Linux users:
 - Go to the cloned directory.
 
@@ -30,4 +31,12 @@ python3 iris_knn.py "test_size"
 
 It runs the K Nearest Neighbour algorithm on the iris dataset.
 
-test_size is the fraction of data points you want as testing data.
+test_size is the fraction of data points you want as testing data. 
+
+- Run.
+
+```
+python3 iris_knn_test.py "test_size"
+```
+
+This runs the knn model on the testing data which the user has determined and chooses the most optimal K.
