@@ -1,6 +1,9 @@
 import numpy as np
 import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
 
+d = {0:'Virginica', 1:'Setosa', 2:'Versicolour'}
 
 def init(data,k):
 	n = np.shape(data)[1]
@@ -12,7 +15,7 @@ def init(data,k):
 	for j in range(n):
 		min_j = min(data[:,j])
 		range_j = float(max(data[:,j]) - min_j)
-		centroids[:,j] = min_j + range_j*np.random.rand(k, 1)
+		centroids[:,j] = min_j + range_j*np.random.rand(k,1)
 	return centroids
 	
 import math	
@@ -94,13 +97,23 @@ def main():
 	X = data[feature_columns].values
 	#Drop the labels as it is an unsupervised learning problem.
 	data.drop(['label'],axis=1,inplace=True) 
-	#print(data.shape)
+	
+	
 	centroids, cluster_assignments, iters, orig_centroids = cluster(X, 3)
+	
 	print('Number of iterations:', iters)
 	print('\nFinal centroids:\n', centroids)
 	print('\nCluster membership and error of first 10 instances:\n', cluster_assignments[:10])
 	print('\nOriginal centroids:\n', orig_centroids)
-
+	outs = pd.DataFrame(cluster_assignments,columns=['label','min_dist_cen'])
+	
+	outs.drop(['min_dist_cen'],axis=1,inplace=True)
+	outs['label'] = outs['label'].map(d)
+	final_data = pd.concat([data,outs],axis=1)
+	#print(final_data)
+		
+	sns.pairplot(final_data, hue = "label", size=3, markers=["o", "s", "D"])
+	plt.show()
 if __name__=='__main__':
 	main()	
 			
