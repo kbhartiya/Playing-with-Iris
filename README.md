@@ -3,8 +3,8 @@ A simple K- Nearest Neighbour and K-means Clusteing  implementation of classifyi
 ![alt Description](https://github.com/kbhartiya/Playing-with-Iris/blob/master/iris_petal_sepal.png) The dataset has the information of sepal width, sepal_height, petal width and petal height in cm for the three classes of Iris flowers Setosa, Virginica, Versicolor.
 
 The Iris flower data set or Fisher's Iris data set is a multivariate data set introduced by the British statistician and biologist Ronald Fisher in his 1936 paper.
-> ![Iris Setosa](https://github.com/kbhartiya/Playing-with-Iris/blob/master/iris_2.jpg)
-- Iris Setosa
+> ![Iris Setosa](https://github.com/kbhartiya/Playing-with-Iris/blob/master/iris_2.jpg)   ![Iris Virginica](https://github.com/kbhartiya/Playing-with-Iris/blob/master/iris.jpg)  ![Iris Versicolor](https://github.com/kbhartiya/Playing-with-Iris/blob/master/iris-1.jpg)
+- Iris Setosa   - Iris Virginica  - Iris Versicolor
 
 > ![Iris Virginica](https://github.com/kbhartiya/Playing-with-Iris/blob/master/iris.jpg)
 - Iris Virginica
