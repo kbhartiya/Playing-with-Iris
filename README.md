@@ -6,7 +6,7 @@ The Iris flower data set or Fisher's Iris data set is a multivariate data set in
 > ![Iris Setosa](https://github.com/kbhartiya/Playing-with-Iris/blob/master/800px-Kosaciec_szczecinkowaty_Iris_setosa.jpg)
 - Iris Setosa
 
-> ![Iris Virginica]()
+> ![Iris Virginica](https://github.com/kbhartiya/Playing-with-Iris/blob/master/800px-Iris_virginica.jpg)
 - Iris Virginica
 
 > ![Iris Versicolor]()
