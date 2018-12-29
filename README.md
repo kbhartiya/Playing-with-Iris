@@ -9,7 +9,7 @@ The Iris flower data set or Fisher's Iris data set is a multivariate data set in
 > ![Iris Virginica](https://github.com/kbhartiya/Playing-with-Iris/blob/master/800px-Iris_virginica.jpg)
 - Iris Virginica
 
-> ![Iris Versicolor]()
+> ![Iris Versicolor](https://github.com/kbhartiya/Playing-with-Iris/blob/master/220px-Iris_versicolor_3.jpg)
 - Iris Versicolor
 
 The data can be downloaded from this [link](https://archive.ics.uci.edu/ml/datasets/iris) with a beautiful description of the dataset.
