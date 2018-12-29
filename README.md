@@ -4,6 +4,14 @@ A simple K- Nearest Neighbour and K-means Clusteing  implementation of classifyi
 
 The Iris flower data set or Fisher's Iris data set is a multivariate data set introduced by the British statistician and biologist Ronald Fisher in his 1936 paper.
 > ![Iris Setosa]()
+- Iris Setosa
+
+> ![Iris Virginica]()
+- Iris Virginica
+
+> ![Iris Versicolor]()
+- Iris Versicolor
+
 The data can be downloaded from this [link](https://archive.ics.uci.edu/ml/datasets/iris) with a beautiful description of the dataset.
 
 
