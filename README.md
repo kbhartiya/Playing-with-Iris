@@ -31,6 +31,12 @@ It runs the K means clustering algorithm on the Iris Dataset and outputs the for
 	
 - Run. 
 
+
+### Results of Kmeans clustering on the dataset.
+
+![3dPlot](https://github.com/kbhartiya/Playing-with-Iris/blob/master/Figure_1.png)
+
+![2dPlot](https://github.com/kbhartiya/Playing-with-Iris/blob/master/Figure_2.png)
 ```
 python3 iris_knn.py "test_size"
 ```
